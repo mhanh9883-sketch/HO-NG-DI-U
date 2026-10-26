@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu - HOANG DIEU Coffee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --primary-color: #795548; 
+            --secondary-color: #d7ccc8;
+            --accent-color: #8d6e63;
+            --dark-color: #3e2723;
+        }
+
+        .bg-custom-brown {
+            background-color: var(--primary-color);
+        }
+
+        .text-custom-brown {
+            color: var(--primary-color);
+        }
+
+        .btn-custom {
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--dark-color);
+            color: #fff;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px auto;
+            color: var(--primary-color);
+            font-size: 24px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .gallery-img {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.03);
+        }
+
+        .testimonial-card {
+            border: none;
+            border-left: 4px solid var(--primary-color);
+            background-color: #fdfbfb;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Không gian Cà phê HOANG DIEU" class="img-fluid rounded-3 shadow">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="text-uppercase fw-bold text-custom-brown tracking-wide">Về HOANG DIEU Coffee</span>
+                    <h2 class="display-6 fw-bold text-dark mt-2 mb-3">Hương Vị Nguyên Chất – Đậm Đà Bản Sắc Việt</h2>
+                    <p class="text-secondary leading-relaxed">
+                        Khởi nguồn từ niềm đam mê mãnh liệt với những hạt cà phê Việt Nam, **HOANG DIEU Coffee** ra đời với mong muốn mang đến cho bạn những tách cà phê thuần túy và trọn vẹn nhất. Chúng tôi cẩn trọng trong từng khâu: từ tuyển chọn hạt cà phê chín cây tại vùng cao nguyên, rang xay theo công thức riêng đến pha chế bằng cả sự tận tâm.
+                    </p>
+                    <p class="text-secondary leading-relaxed">
+                        Dù bạn yêu thích vị đắng đằm thắm của Robusta hay hương thơm thanh thoát, chua nhẹ của Arabica, HOANG DIEU luôn sẵn sàng phục vụ và mang lại cho bạn trải nghiệm tuyệt vời nhất.
+                    </p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-custom rounded-1 me-2">Khám Phá Menu</a>
+                        <a href="#" class="btn btn-outline-secondary rounded-1">Liên Hệ Đặt Bàn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">Giá Trị Cốt Lõi</h2>
+                <p class="text-muted">Điều làm nên sự đặc biệt trong từng tách cà phê tại HOANG DIEU</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon">
+                            <i class="bi bi-cup-hot-fill"></i>
+                        </div>
+                        <h4 class="h5 fw-bold">Hạt Cà Phê Tuyển Chọn</h4>
+                        <p class="text-muted mb-0">100% hạt cà phê chất lượng cao được thu hái thủ công từ các nông trại đạt chuẩn tại Buôn Ma Thuột & Cầu Đất.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon">
+                            <i class="bi bi-fire"></i>
+                        </div>
+                        <h4 class="h5 fw-bold">Rang Xay Thủ Công</h4>
+                        <p class="text-muted mb-0">Quy trình rang xay hiện đại giữ trọn vẹn hương thơm tự nhiên, không pha tạp chất hay chất bảo quản.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon">
+                            <i class="bi bi-heart-fill"></i>
+                        </div>
+                        <h4 class="h5 fw-bold">Không Gian Ấm Cúng</h4>
+                        <p class="text-muted mb-0">Thiết kế mộc mạc, tinh tế mang đậm nét văn hóa Việt, là điểm đến lý tưởng để làm việc và thư giãn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">Không Gian & Trải Nghiệm</h2>
+                <p class="text-muted">Ghé thăm HOANG DIEU để cảm nhận sự yên bình giữa lòng thành phố</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 col-6">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" class="w-100 gallery-img shadow-sm" alt="Không gian quán 1">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80" class="w-100 gallery-img shadow-sm" alt="Pha chế cà phê">
+                </div>
+                <div class="col-md-4 col-12">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80" class="w-100 gallery-img shadow-sm" alt="Góc đọc sách">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">Khách Hàng Nói Gì</h2>
+                <p class="text-muted">Sự hài lòng của bạn là động lực lớn nhất của chúng tôi</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card p-4 shadow-sm testimonial-card h-100">
+                        <div class="mb-2 text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text fst-italic text-secondary">"Cà phê phin ở đây đượm vị, chuẩn gu nguyên chất. Không gian quán thiết kế ấm cúng, nhạc nhẹ nhàng rất thích hợp để làm việc."</p>
+                        <div class="fw-bold mt-auto text-dark">— Minh Anh (TP.HCM)</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4 shadow-sm testimonial-card h-100">
+                        <div class="mb-2 text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text fst-italic text-secondary">"Nhân viên thân thiện, nước uống ngon và bánh ngọt đi kèm rất vừa miệng. Chắc chắn sẽ quay lại nhiều lần!"</p>
+                        <div class="fw-bold mt-auto text-dark">— Hoàng Nam (Đà Nẵng)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

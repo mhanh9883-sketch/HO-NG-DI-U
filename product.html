@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <style>
+        .ch {
+            position: relative;
+        }
+
+        .con {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+        }
+
+        .col-md-3 {}
+
+        .fbn img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .frame img {
+            width: 100%;
+            height: 100%;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #danhmuc a:hover {
+            color: red;
+        }
+
+        .o-xanh {
+            height: 112px;
+            background-color: #4775c5;
+            border: 2px solid #26354d;
+        }
+    </style>
+    </head>
+
+    <body>
+
+
+        <div class="container-fluid p-0">
+            <header style="height:120px;" class="bg-white text-black d-flex align-items-center position-relative cha">
+                <img src="IMAGES/logo/logo3.png" alt="" style="height:80px ;">
+                <div class="fs-1 position-absolute con fw-bold" style="color: #3D2B1F;">The Coffee House</div>
+        </div>
+
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #6F4E37;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="detail.html">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="product.html">Sản Phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Giỏ hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Liên hệ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="new.html">Tin tức </a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="text" placeholder="Search">
+                            <button class="btn" type="button"
+                                style="background-color: #FDF5E6; color: #4E3629; border: none;">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container p-0">
+
+
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="IMAGES/banner/bn21.jpg" alt="Los Angeles" class="d-block w-100"
+                            style="height: 500px; ">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMAGES/banner/bn22.jpg" alt="Chicago" class="d-block w-100  style=" height: 500px;>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMAGES/banner/bn23.jpg" alt="New York" class="d-block w-100  style=" height: 500px;
+                            width;>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="container  p-2 my-2">
+            <div class="row">
+                <h2 class="fw-bold "
+                    style="color: #8a5a3b; font-size: 1.8rem; border-left: 5px solid #EA8025; padding-left: 15px;">
+            </div>
+            <div class="row my-2">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 text-end p-0">
+                    <label for="">Sắp xếp theo</label>
+                    <select name="" id="" class="p-2">
+                        <option value="">Theo tên</option>
+                        <option value="">Theo giá</option>
+                        <option value="">Theo Danh mục</option>
+                        <option value="">Theo loại</option>
+                    </select>
+                    </select>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 p-2 fbn" style="height: 530px; border: 1px solid gray;">
+                    <h4>TÌM KIẾM THEO ĐƠN GIÁ</h4>
+
+                    <form action="/action_page.php">
+                        <label for="vol">Volume (between 0 and 5000000):</label>
+                        <input type="range" id="vol" name="vol" min="0" max="5000000">
+                    </form>
+                    <div class="row">
+                        <h5>DANH MỤC SẢN PHẨM</h5>
+                    </div>
+                    <div class="row" id="danhmuc">
+                        <ul>
+                            <li class="ms-4 p-1"><a href="">Cà phê hạt</a></li>
+                            <li class="ms-4 p-1"> <a href="">Cà phê rang xay</a></li>
+                            <li class="ms-4 p-1"><a href="">Cà phê Arabica</a></li>
+                            <li class="ms-4 p-1"><a href="">Cà phê Robusta</a></li>
+                            <li class="ms-4 p-1"><a href=""> Cà phê hòa tan</a></li>
+                            <li class="ms-4 p-1"><a href="">Cà phê túi lọc</a></li>
+                            <li class="ms-4 p-1"><a href="">Cà phê Espresso</a></li>
+                            <li class="ms-4 p-1"><a href="">Cà phê phin</a></li>
+                            <li class="ms-4 p-1"><a href="">Cà phê đặc sản</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row g-2">
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/trada/tra1.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Trà Đá</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/bacxiu/bx1.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Bạc Xĩu</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/banh/bsb11.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Bánh Sừng Bò</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/cafe/cf1.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Cà Phê</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/cafe/cf2.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Cà Phê</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/trada/tra1.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Trà Đá</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/banh/bsb2.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Bánh Sừng Bò</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/bacxiu/bx2.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Bạc Xĩu</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/cafe/cf15.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Cà Phê</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/cafe/cf3.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Cà Phê</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/bacxiu/bx3.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Bạc Xĩu</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/banh/bsb3.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Bánh Sừng Bò</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/trada/tra3.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Trà Đá</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/cafe/cf4.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Cà Phê</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/trada/tra4.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Trà Đá</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="height: 470px;">
+                                <img class="card-img-top" src="IMAGES/bacxiu/bx4.jpg" alt="Card image"
+                                    style="height: 250px;">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Bạc Xĩu</h4>
+                                    <a href="#" class="btn btn-danger">20.000</a>
+                                    <a href="detail.html" class="btn btn-primary">Mua Ngay </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="row">
+
+                    <div class="container-fluid py-4"
+                        style="background-color:  #a98261; border-top: 1px solid #a98261;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <h6 class="fw-bold text-uppercase">CÔNG TY CỔ PHẦN CÀ PHÊ VIỆT</h6>
+                                    <p class="mb-1 small text-black">© 2026 Công Ty Cổ Phần Cà Phê Việt. Bảo lưu mọi
+                                        quyền.</p>
+                                    <p class="mb-1 small text-black">Giấy chứng nhận đăng ký doanh nghiệp: 0101234567 do
+                                        Sở KH&ĐT TP.HCM
+                                        cấp ngày 15 tháng 03 năm 2015.</p>
+                                    <p class="mb-0 small text-black">Chuyên cung cấp hạt cà phê nguyên chất, thiết bị
+                                        pha chế và dịch vụ
+                                        nhượng quyền thương hiệu.</p>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <h6 class="fw-bold text-uppercase">Địa chỉ trụ sở & Chi nhánh</h6>
+
+                                    <div class="mb-2">
+                                        <strong class="small d-block text-black">Trụ sở chính (Showroom &
+                                            Cafe):</strong>
+                                        <span class="small text-black">123 Đường Nguyễn Huệ, Phường Bến Nghé, Quận 1,
+                                            Thành phố Hồ Chí
+                                            Minh, Việt Nam</span>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <strong class="small d-block text-black">Văn phòng đại diện Miền Bắc:</strong>
+                                        <span class="small text-black">Tầng 5, Số 45 Phố Lý Thường Kiệt, Quận Hoàn Kiếm,
+                                            Thành phố Hà Nội,
+                                            Việt Nam</span>
+                                    </div>
+
+                                    <div>
+                                        <strong class="small d-block text-black">Xưởng sản xuất & Chế biến:</strong>
+                                        <span class="small text-black">Khu Công Nghiệp Hòa Phú, TP. Buôn Ma Thuột, Tỉnh
+                                            Đắk Lắk, Việt
+                                            Nam</span>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4820349695697!2d106.70027307481799!3d10.774344789374297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f471fae0893%3A0x4a0c6395cc27f990!2zMTIzIE5ndXnDqsyDbiBIdcOqzKMsIFPDoGkgR8OybiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1790130982265!5m2!1svi!2s"
+                                            width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+
+</html>
