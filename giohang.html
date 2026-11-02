@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ Hàng</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <style>
+    .logo {
+    width: 122px;
+    height: auto;
+}
+
+table th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: brown;
+}
+
+table button {
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 6px;
+}
+
+table button:hover {
+    background-color: red;
+    color: wheat;
+}
+
+</style>
+  </head>
+
+  <body>
+
+    <div class="container-fluid p-0">
+        <header style="height:120px;" class="bg-white text-black d-flex align-items-center position-relative cha">
+            <img src="IMAGES/logo/logo3.png" alt="" style="height:80px ;">
+            <div class="fs-1 position-absolute con fw-bold" style="color: #3D2B1F;">The Coffee House</div>
+    </div>
+
+  <div class="container p-0">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #6F4E37;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="detail.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="product.html">Sản Phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Giỏ hàng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Liên hệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="new.html">Tin tức </a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn" type="button"
+              style="background-color: #FDF5E6; color: #4E3629; border: none;">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  
+
+  <table class="table">
+    <h3 style="margin-top: 30px; margin-bottom: 20px;">GIỎ HÀNG CỦA BẠN</h3>
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Sản phẩm</th>
+            <th>Hình</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Cà phê</td>
+            <td><img src="IMAGES/cafe/cf10.jpg" alt="" style="height: 60px; width: auto;"></td>
+            <td>30000</td>
+            <td>2</td>
+            <td>1000000</td>
+            <td><button>Xóa</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Trà đá</td>
+            <td><img src="IMAGES/trada/tra3.jpg" alt="" style="height: 60px; width: auto;"></td>
+            <td>20000</td>
+            <td>2</td>
+            <td>1000000</td>
+            <td><button>Xóa</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bánh Sừng Bò</td>
+            <td><img src="IMAGES/banh/bsb7.jpg" alt="" style="height: 60px; width: auto;"></td>
+            <td>50000</td>
+            <td>2</td>
+            <td>1000000</td>
+            <td><button>Xóa</button></td>
+        </tr>
+      
+        <tr>
+            <td colspan="5" style="text-align: right; font-weight: bold;">Tổng thanh toán:</td>
+            <td colspan="2" style="font-weight: bold; color: red;">3.000.000đ</td> 
+        </tr>
+    </tbody>
+</table>
+<div class="container  p-2 my-2">
+    <div class="row">
+      <h2 class="fw-bold mt-5 mb-4"
+        style="color: #8a5a3b; font-size: 1.8rem; border-left: 5px solid #EA8025; padding-left: 15px;">
+        Sản Phẩm Bán Chạy
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card" style="height: 470px;">
+          <img class="card-img-top" src="IMAGES/cafe/cf2.jpg" alt="Card image" style="height: 250px;">
+          <div class="card-body text-center">
+            <h4 class="card-title">Cà Phê Sữa</h4>
+            <p class="card-text">Cà phê sữa là một thức uống phổ biến tại Việt Nam, kết hợp giữa vị đắng của cà
+              phê.</p>
+            <a href="#" class="btn btn-danger">30.000</a>
+            <a href="#" class="btn btn-primary">Mua Ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="height: 470px;">
+          <img class="card-img-top" src="IMAGES/banh/bsb3.jpg" alt="Card image" style="height: 250px;">
+          <div class="card-body text-center ">
+            <h4 class="card-title">Bánh Sừng Bò</h4>
+            <p class="card-text">Vỏ bánh xốp giòn, nhiều lớp mỏng xếp chồng lên nhau nhờ kỹ thuật cán bơ
+              .</p>
+            <a href="#" class="btn btn-danger">50.000</a>
+            <a href="#" class="btn btn-primary">Mua Ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="height: 470px;">
+          <img class="card-img-top" src="IMAGES/bacxiu/bx2.jpg" alt="Card image" style="height: 250px;">
+          <div class="card-body text-center">
+            <h4 class="card-title">Bạc Xĩu</h4>
+            <p class="card-text">Bạc xỉu là thức uống đặc trưng của Sài Gòn nổi bật với lượng sữa
+              .</p>
+            <a href="#" class="btn btn-danger">45.000</a>
+            <a href="#" class="btn btn-primary">Mua Ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="height: 470px;">
+          <img class="card-img-top" src="IMAGES/trada/tra2.jpg" alt="Card image" style="height: 250px;">
+          <div class="card-body text-center">
+            <h4 class="card-title">Trà Đá</h4>
+            <p class="card-text">Trà đá là thức uống dân dã phổ biến gồm nước trà nguội pha loãng hoặc đậm đặc
+              thêm đá lạnh.</p>
+            <a href="#" class="btn btn-danger">20.000</a>
+            <a href="#" class="btn btn-primary">Mua Ngay </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+    
+</body>
+
+</html>
